@@ -75,3 +75,26 @@ export function wishList() {
   })
 
 }
+
+
+export function headerTop() {
+  const headerTops = document.querySelector('header');
+  let screenY = window.innerHeight / 15;
+  console.log(window.innerHeight);
+
+  let HeaderArrowRight = document.querySelector('.header_arrow-right')
+
+  window.onscroll = function () {
+    if (pageYOffset > screenY) {
+      headerTops.style.cssText = "position:fixed;top:0;left:0;z-index:999;transition:all .5s; width:100%; height:50px;"
+      HeaderArrowRight.style.transform = 'translateY(-50%)';
+    }
+    else {
+      headerTops.style.cssText = '';
+      HeaderArrowRight.style.transform = ''
+    }
+  }
+
+
+
+}

@@ -1,13 +1,16 @@
 
 import { calc } from "./count.js";
 import { wishList } from "./count.js";
+import { headerTop } from "./count.js";
+
 
 const productSlider = document.querySelector('.product_slider');
 const productSliderItem = document.querySelectorAll('.product_slider-item');
-const dot = document.querySelectorAll('.dot')
+const dot = document.querySelectorAll('.dot');
 
 wishList();
 calc();
+headerTop();
 
 //слайдер на табах
 let firstSlide = 1;

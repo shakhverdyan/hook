@@ -1,7 +1,8 @@
 import { calc } from "./count.js";
+import { headerTop } from "./count.js";
 
 calc();
-
+headerTop();
 // remove adress 
 const btnRemoveAdress = document.querySelector('.btn-remove-adress');
 const inputs = document.querySelectorAll('.adess_info input');
