@@ -79,7 +79,7 @@ export function wishList() {
 
 export function headerTop() {
   const headerTops = document.querySelector('header');
-  let screenY = window.innerHeight / 15;
+  let screenY = window.innerHeight / 50;
   console.log(window.innerHeight);
 
   let HeaderArrowRight = document.querySelector('.header_arrow-right')
