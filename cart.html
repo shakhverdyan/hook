@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart Hook-Рroduction</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="yandex-verification" content="4ed383dc9e10940e" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <!--Подключение иконки favicon-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/cart.js" defer type="module"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="header_arrow-right">
+        <a href="index.html">
+          <svg class="icon" width="24px" height="24px">
+            <use href="img/image-svg.svg#arrow_line_right"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="header_goods_name">
+        <p class="header_goods_title">Cart</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <div class="product cart-product">
+          <div class="adress">
+            <div class="adress_title">
+              <p>Delivery address</p>
+              <div class="btn-remove-adress">
+                <svg class="icon" width="19px" height="22px">
+                  <use href="img/image-svg.svg#del"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="address_form">
+              <div class="adress_city">
+                <p>SE1 6DR, 42 Newington Causeway</p>
+                <small>London</small>
+                <div class="arrow_right adress_arrow">
+                  <svg class="icon" width="19px" height="22px">
+                    <use href="img/image-svg.svg#arrow-right"></use>
+                  </svg>
+                </div>
+
+              </div>
+              <div class="adess_info">
+                <div class="adress_flat data">
+                  <input type="text" id="number" required>
+                  <label for="number">Flat</label>
+                </div>
+                <div class="adress_floor data">
+                  <input type="text" id="floor" required>
+                  <label for="floor">Floor</label>
+                </div>
+                <div class="adress_block data">
+                  <input type="text" id="block" required>
+                  <label for="block">Block</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-in-cart">
+              <h3 class="cart-count title_h3"><span>2</span>items</h3>
+              <div class="cart_items">
+
+                <div class="cart_goods godsItem">
+                  <div class="left_part">
+                    <img src="img/milk.png" alt="" class="recommended_item_img">
+                  </div>
+                  <div class="right_part">
+                    <p class="recommended_item_name">Best-in 10 British Big Eggs</p>
+
+                    <div class="add_to_cart">
+                      <div class="cart_cost">
+                        <p class="current_price godsItemPrice">£<span>0.00</span></p>
+                        <p class="price_item">1 pc / £<span class="curentSum">1.59</span></p>
+                      </div>
+                      <div class="del" data-name="del">
+                        <svg data-name="del" class="icon" width="19px" height="19px">
+                          <use data-name="del" href="img/image-svg.svg#del"></use>
+                        </svg>
+                      </div>
+                      <span class="add">Add</span>
+                      <div class="plus recommended_item_plus" data-name='plus'>
+                        <svg data-name='plus' class="icon" width="24px" height="24px">
+                          <use data-name='plus' href="img/image-svg.svg#plus"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart_goods godsItem">
+                  <div class="left_part">
+                    <img src="img/milk.png" alt="" class="recommended_item_img">
+                  </div>
+                  <div class="right_part">
+                    <p class="recommended_item_name details">Best-in 10 British Big Eggs</p>
+                    <p class="special">Price has been changed: <span>(£2.59)</span></p>
+
+                    <div class="add_to_cart">
+                      <div class="cart_cost">
+                        <p class="current_price current_price-sale godsItemPrice">£<span>0.00</span></p>
+                        <p class="price_item">1 pc / £<span class="curentSum">1.59</span></p>
+                      </div>
+                      <div class="del" data-name="del">
+                        <svg data-name="del" class="icon" width="19px" height="19px">
+                          <use data-name="del" href="img/image-svg.svg#del"></use>
+                        </svg>
+                      </div>
+                      <span class="add">Add</span>
+                      <div class="plus recommended_item_plus" data-name='plus'>
+                        <svg data-name='plus' class="icon" width="24px" height="24px">
+                          <use data-name='plus' href="img/image-svg.svg#plus"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart_goods godsItem">
+                  <div class="left_part">
+                    <img src="img/milk.png" alt="" class="recommended_item_img">
+                  </div>
+                  <div class="right_part">
+                    <p class="recommended_item_name">Best-in 10 British Big Eggs</p>
+                    <p class="special">Special offer:<span>-20%</span></p>
+                    <div class="add_to_cart">
+                      <div class="cart_cost">
+                        <p class="current_price  godsItemPrice current_price-sale discount">£<span>0.00</span></p>
+                        <p class="price_item">1 pc / £<span class="curentSum">1.59</span></p>
+                      </div>
+
+                      <div class="del" data-name="del">
+                        <svg data-name="del" class="icon" width="19px" height="19px">
+                          <use data-name="del" href="img/image-svg.svg#del"></use>
+                        </svg>
+                      </div>
+                      <span class="add">Add</span>
+                      <div class="plus recommended_item_plus" data-name='plus'>
+                        <svg data-name='plus' class="icon" width="24px" height="24px">
+                          <use data-name='plus' href="img/image-svg.svg#plus"></use>
+                        </svg>
+                      </div>
+
+                    </div>
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <h3 class="title_h3">Payment</h3>
+        <div class="payment product cart-product">
+
+          <div class="payment_block">
+            <input type="text" placeholder="Enter promocode GHYU907H">
+            <div class="promo-ok"></div>
+          </div>
+        </div>
+
+        <div class="order product cart-product">
+          <div class="order-block">
+            <div class="order-name">Order: </div>
+            <div class="order-sum"> £ <span>0</span></div>
+          </div>
+          <div class="order-block">
+            <div class="delivery-name">Delivery: </div>
+            <div class="delivery-sum"> £ <span>0.4</span></div>
+          </div>
+          <div class="order-block">
+            <div class="Promocode-name">Promocode: </div>
+            <div class="Promocode-sum red"> -£ <span>0.0</span></div>
+          </div>
+          <div class="order_total">
+            <div class="order-block">
+              <div class="total-name">Total: </div>
+              <div class="total-sum "> £ <span>0</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="checkout">
+      <div class="checkout_block">
+        <svg class="icon" width="45px" height="45px">
+          <use href="img/image-svg.svg#jet"></use>
+        </svg>
+        <div class="checkout_delivery">
+          <p class="checkout_title">Delivery:</p>
+          <p class="checkout_delivery-elem">25-30 min</p>
+        </div>
+      </div>
+
+      <div class="checkout_total">
+        <p class="checkout_title">Total:</p>
+        <p class="checkout_delivery-elem">£<span class="sequent">0</span></p>
+      </div>
+      <button class="checkout_btn">Checkout</button>
+    </footer>
+
+  </div>
+
+
+
+</body>
+
+</html>
